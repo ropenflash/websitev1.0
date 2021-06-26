@@ -36,6 +36,11 @@
   width: 50%;
   left: 15%;
   transform: skew(20deg);
+  display: none;
+
+  @include small_breakpoint {
+    display: block;
+  }
 }
 
 .textSection {
