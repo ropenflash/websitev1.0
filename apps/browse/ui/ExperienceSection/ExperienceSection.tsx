@@ -12,7 +12,7 @@ export default function ExperienceSection() {
           </div>
         </div>
         <div className={styles.textPart}>
-          <div>
+          <div className={styles.textSection}>
 
             <h1>
               Tricktionary

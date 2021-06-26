@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #FFBABA;
+  margin-bottom:-20vw;
 }
 
 
@@ -13,6 +13,35 @@
   display: flex;
   height: 100%;
   width: 100%;
+  margin-bottom: -20vw;
+}
+
+
+
+.cardPart {
+  background-color: #53ABD1;
+  height: 100%;
+  width: 100%;
+  // clip-path: polygon(0 0, 74% 0, 100% 67%, 0% 100%);
+}
+
+.textPart {
+  background-color: #FFBABA;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 90%,0 100%);
+}
+
+.textSection {
+  margin-left: $spacing-l;
+}
+
+.subscribeSection {
+  background-color: #2F6381;
+  height: 60%;
+  width: 100%;
+  z-index: 1;
+  clip-path: polygon(0 30%, 100% 0, 100% 60%, 0 90%);
 }
 
 .cards {
@@ -20,23 +49,4 @@
   margin-top: $spacing-l;
   margin-left: $spacing-m;
   position: relative;
-}
-
-.cardPart {
-  background-color: #53ABD1;
-  height: 100%;
-  width: 100%;
-}
-
-.textPart {
-  background-color: #FFBABA;
-  margin-left: $spacing-l;
-  height: 100%;
-  width: 100%;
-}
-
-.subscribeSection {
-  background-color: #2F6381;
-  height: 60%;
-  width: 100%;
 }
