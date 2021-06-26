@@ -2,6 +2,8 @@ import Layout from "@components/Layout"
 
 export default function AboutUsPage() {
   return (
-    <Layout title="About" />
+    <Layout title="About" >
+      About Us
+    </Layout>
   )
 }
