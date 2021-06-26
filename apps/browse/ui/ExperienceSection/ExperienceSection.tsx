@@ -12,7 +12,7 @@ export default function ExperienceSection() {
           </div>
         </div>
         <div className={styles.textPart}>
-          <div className={styles.textSection}>
+          {/* <div className={styles.textSection}>
 
             <h1>
               Tricktionary
@@ -24,16 +24,16 @@ export default function ExperienceSection() {
             <p>
               find out which one suits your style.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       < div className={styles.subscribeSection}>
-        <div className={styles.subscribeText}>
+        {/* <div className={styles.subscribeText}>
           <h1>
             Subscribe
           </h1>
         </div>
-        <img src="logo.png" className={styles.logo} alt="logo" />
+        <img src="logo.png" className={styles.logo} alt="logo" /> */}
       </div>
     </div >
   )
