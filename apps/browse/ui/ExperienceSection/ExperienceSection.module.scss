@@ -19,7 +19,6 @@
   background-color: #53abd1;
   height: 100%;
   width: 100%;
-  // clip-path: polygon(0 0, 74% 0, 100% 67%, 0% 100%);
 }
 
 .textPart {
@@ -40,7 +39,8 @@
 }
 
 .textSection {
-  margin-left: $spacing-l;
+  margin-top: 10%;
+  margin-left: 30%;
 }
 
 .subscribeSection {
