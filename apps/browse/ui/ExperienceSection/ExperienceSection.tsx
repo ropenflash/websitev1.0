@@ -5,11 +5,11 @@ export default function ExperienceSection() {
     <div className={styles.experienceSection}>
       <div className={styles.trickSection}>
         <div className={styles.cardPart}>
-          <div className={styles.cards}>
+          {/* <div className={styles.cards}>
             <ImageCard inlineStyles={{ left: "10%" }} src="side.jpg" />
             <ImageCard inlineStyles={{ left: "25%", zIndex: 1 }} src="eb2.jpg" />
             <ImageCard inlineStyles={{ left: "40%" }} src="toad.jpg" />
-          </div>
+          </div> */}
         </div>
         <div className={styles.textPart}>
           <div className={styles.textSection}>
