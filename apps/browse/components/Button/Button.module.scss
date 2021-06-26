@@ -1,0 +1,10 @@
+@import '../../assets/variables';
+
+
+
+.button {
+  display: block;
+  padding: $spacing-m;
+  background-color: $black;
+  color:$white;
+}

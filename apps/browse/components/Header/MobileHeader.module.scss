@@ -1,0 +1,14 @@
+@import "../../assets/variables";
+
+
+.header {
+  background-color: $black;
+  color: $white;
+  padding: $spacing-m;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+

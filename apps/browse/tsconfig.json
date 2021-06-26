@@ -13,7 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths":{
-      "@components/*":["components/*"]
+      "@components/*":["components/*"],
+      "@ui/*":["ui/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],

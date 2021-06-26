@@ -2,17 +2,19 @@
 
 .footer {
   display: flex;
-  @include medium_breakpoint{
-    flex-direction: column;
-  }
+  background: $black;
+  color: $white;
+  padding:$spacing-s;
 }
 
 .firstSection {
   display: flex;
   flex-direction: column;
+  margin-left: $spacing-m;
 }
 
 .secondSection {
   display: flex;
   flex-direction: column;
+  margin-left: $spacing-m;
 }

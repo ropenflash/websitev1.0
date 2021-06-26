@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from "@components/Header"
-import Footer from '@components/Footer'
+import Layout from '@components/Layout';
+import HeroSection from '@ui/heroSection/HeroSection';
 
 
 export function Index() {
   return (
     <>
-      <Header />
-      <Footer />
+      <Layout title="RopeNflash">
+        <HeroSection />
+      </Layout>
     </>
   );
 }

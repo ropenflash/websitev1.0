@@ -13,8 +13,8 @@ export function Footer() {
       </div>
       <div className={styles.secondSection}>
         <Link href="/tutorials">tutorials</Link>
-        <Link href="/jumpropes">contact</Link>
-        <Link href="/dance">about us</Link>
+        <Link href="/contact">contact</Link>
+        <Link href="/about">about us</Link>
       </div>
       <div className={styles.socialSection}></div>
     </footer>

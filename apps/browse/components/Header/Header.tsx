@@ -1,25 +1,16 @@
+
+import { useMediaQuery } from 'react-responsive'
+import MobileHeader from './MobileHeader'
+import DesktopHeader from './DesktopHeader'
+
 export function Header() {
-  return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            Home
-          </li>
-          <li>
-            Tricks
-          </li>
-          <li>
-            Tutorials
-          </li>
-          <li>
-            Dance
-          </li>
-          <li>
-            Contact
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: '(max-device-width: 1224px)'
+  })
+
+
+  return (isTabletOrMobileDevice ? <MobileHeader /> : <DesktopHeader />
+
   )
 }

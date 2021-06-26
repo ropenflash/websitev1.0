@@ -27,13 +27,13 @@
   },
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
     "@nrwl/next": "^12.4.0",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-responsive": "^8.2.0",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.0.0"
   },
