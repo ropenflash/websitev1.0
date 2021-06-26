@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom:-20vw;
+  margin-bottom:-10vw;
 }
 
 
@@ -13,7 +13,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  margin-bottom: -20vw;
+  margin-bottom: -10vw;
 }
 
 
@@ -37,11 +37,29 @@
 }
 
 .subscribeSection {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
   background-color: #2F6381;
   height: 60%;
   width: 100%;
   z-index: 1;
-  clip-path: polygon(0 30%, 100% 0, 100% 60%, 0 90%);
+  clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 90%);
+}
+
+.subscribeText {
+  margin-top:15%;
+  margin-left:10%;
+  color:white;
+  z-index: 10;
+}
+
+
+.logo {
+  position:absolute;
+  top:10%;
+  right:10%;
+  height: inherit;
 }
 
 .cards {

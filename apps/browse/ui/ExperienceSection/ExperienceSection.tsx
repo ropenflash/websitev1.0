@@ -27,9 +27,14 @@ export default function ExperienceSection() {
           </div>
         </div>
       </div>
-      <div className={styles.subscribeSection}>
-
+      < div className={styles.subscribeSection}>
+        <div className={styles.subscribeText}>
+          <h1>
+            Subscribe
+          </h1>
+        </div>
+        <img src="logo.png" className={styles.logo} alt="logo" />
       </div>
-    </div>
+    </div >
   )
 }
