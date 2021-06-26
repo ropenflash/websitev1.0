@@ -13,7 +13,9 @@ export default function MobileHeader() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/">ROPENFLASH</Link>
+        <div>
+          <Link href="/">ROPENFLASH</Link>
+        </div>
       </nav>
     </header>
   )
