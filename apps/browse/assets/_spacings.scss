@@ -1,0 +1,141 @@
+// Detail spacing (used within a component)
+$base-unit: 8px !default;
+
+$spacing-xxxs: $base-unit * 0.5 !default;
+$spacing-xxs: $base-unit !default;
+$spacing-xs: $base-unit * 1.5 !default;
+$spacing-s: $base-unit * 2 !default;
+$spacing-20: $base-unit * 2.5 !default;
+$spacing-m: $base-unit * 3 !default;
+$spacing-l: $base-unit * 4 !default;
+$spacing-40: $base-unit * 5 !default;
+$spacing-xl: $base-unit * 6 !default;
+$spacing-xxl: $base-unit * 8 !default;
+$spacing-xxxl: $base-unit * 12 !default;
+
+$spacing-set: (
+  '$spacing-xxxs': $spacing-xxxs,
+  '$spacing-xxs': $spacing-xxs,
+  '$spacing-xs': $spacing-xs,
+  '$spacing-s': $spacing-s,
+  '$spacing-20': $spacing-20,
+  '$spacing-m': $spacing-m,
+  '$spacing-l': $spacing-l,
+  '$spacing-40': $spacing-40,
+  '$spacing-xl': $spacing-xl,
+  '$spacing-xxl': $spacing-xxl,
+  '$spacing-xxxl': $spacing-xxxl,
+);
+
+// Layout spacing (used to separate components)
+$layout-xxs: $base-unit * 2 !default;
+$layout-xs: $base-unit * 2.5 !default;
+$layout-s: $base-unit * 3 !default;
+$layout-m: $base-unit * 4 !default;
+$layout-l: $base-unit * 5 !default;
+$layout-xl: $base-unit * 6 !default;
+$layout-xxl: $base-unit * 7 !default;
+$layout-xxxl: $base-unit * 8 !default;
+
+$layout-set: (
+  '$layout-xxs': $layout-xxs,
+  '$layout-xs': $layout-xs,
+  '$layout-s': $layout-s,
+  '$layout-m': $layout-m,
+  '$layout-l': $layout-l,
+  '$layout-xl': $layout-xl,
+  '$layout-xxl': $layout-xxl,
+  '$layout-xxxl': $layout-xxxl,
+);
+
+// All spacing after this comment need clean up and alignment with UI
+// DO NOT USE
+$field-height: 48px;
+$button-standard-height: $field-height;
+$mobile-header-height: 72px;
+$spacing-vertical-xxs: 10px;
+$spacing-vertical-xs: 15px;
+$spacing-vertical-s: 24px;
+$spacing-vertical-m: 30px;
+$spacing-vertical-l: 40px;
+$spacing-vertical-xl: 70px;
+$vertical-scroll-breakpoint-desktop: 1001px;
+$swipe-in-sidebarpluscontent: 1062px;
+$grid-column-width: 58px;
+$grid-column-gutter: $spacing-m;
+$grid-gutter: $spacing-m;
+$grid-gutter-pixels: $spacing-m;
+$grid-side-gutter: $spacing-m;
+$grid-gutter-level-one-percent: 2.5%;
+$grid-gutter-level-two-percent: 3.35%;
+
+//Toolbox margins and gutters
+$teaser-gutter: 15px;
+$teaser-s-gutter: 20px;
+$teaser-m-gutter: 30px;
+$teaser-l-gutter: 40px;
+$teaser-gutter-3x2: 12.5%;
+$side-margins-xs: 15px;
+$background-plate-gutter: 20px;
+$modal-padding: $spacing-xxl;
+$modal-mobile-padding: $spacing-m;
+$mobile-height: 72px;
+$desktop-height: $mobile-height;
+$hamburger-menu-height: 30px;
+$megamenu-height: 72px;
+$option-max-height: 103px;
+$side-margins: 60px;
+$side-margins-large: 80px;
+$meta-min-width: 85px;
+$form-input-height: 52px;
+$sidebar-width: 224px;
+$centerd-block-width: 714px;
+$sidebar-width-pixels: 224px;
+$spinner-small: 16px;
+$spinner-medium: 24px;
+$spinner-large: 32px;
+
+$other-spacings-set: (
+  '$field-height': $field-height,
+  '$button-standard-height': $button-standard-height,
+  '$mobile-header-height': $mobile-header-height,
+  '$spacing-vertical-xxs': $spacing-vertical-xxs,
+  '$spacing-vertical-xs': $spacing-vertical-xs,
+  '$spacing-vertical-s': $spacing-vertical-s,
+  '$spacing-vertical-m': $spacing-vertical-m,
+  '$spacing-vertical-l': $spacing-vertical-l,
+  '$spacing-vertical-xl': $spacing-vertical-xl,
+  '$vertical-scroll-breakpoint-desktop': $vertical-scroll-breakpoint-desktop,
+  '$swipe-in-sidebarpluscontent': $swipe-in-sidebarpluscontent,
+  '$grid-column-width': $grid-column-width,
+  '$grid-column-gutter': $grid-column-gutter,
+  '$grid-gutter': $grid-gutter,
+  '$grid-gutter-pixels': $grid-gutter-pixels,
+  '$grid-side-gutter': $grid-side-gutter,
+  '$grid-gutter-level-one-percent': $grid-gutter-level-one-percent,
+  '$grid-gutter-level-two-percent': $grid-gutter-level-two-percent,
+  '$teaser-gutter': $teaser-gutter,
+  '$teaser-s-gutter': $teaser-s-gutter,
+  '$teaser-m-gutter': $teaser-m-gutter,
+  '$teaser-l-gutter': $teaser-l-gutter,
+  '$teaser-gutter-3x2': $teaser-gutter-3x2,
+  '$side-margins-xs': $side-margins-xs,
+  '$background-plate-gutter': $background-plate-gutter,
+  '$modal-padding': $modal-padding,
+  '$modal-mobile-padding': $modal-mobile-padding,
+  '$mobile-height': $mobile-height,
+  '$desktop-height': $desktop-height,
+  '$hamburger-menu-height': $hamburger-menu-height,
+  '$megamenu-height': $megamenu-height,
+  '$option-max-height': $option-max-height,
+  '$side-margins': $side-margins,
+  '$side-margins-large': $side-margins-large,
+  '$meta-min-width': $meta-min-width,
+  '$form-input-height': $form-input-height,
+  '$sidebar-width': $sidebar-width,
+  '$centerd-block-width': $centerd-block-width,
+  '$sidebar-width-pixels': $sidebar-width-pixels,
+  '$spinner-small': $spinner-small,
+  '$spinner-medium': $spinner-medium,
+  '$spinner-large': $spinner-large,
+);

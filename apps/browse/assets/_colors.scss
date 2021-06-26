@@ -1,0 +1,220 @@
+@import './global-colors';
+
+
+$base-background-default: #fff !default;
+$base-background-card: #fff !default;
+$base-background-overlay: rgba(#222, 0.75) !default;
+$base-background-footer: #fff !default;
+$base-background-row-hover: darken($base-background-card, 10%) !default;
+$base-background-error: #ffcdce !default;
+$base-background-success: #8dd5b9 !default;
+$base-background-warning: #ffd1a1 !default;
+$base-background-info: #93cdff !default;
+$base-background-skeleton: #eee !default;
+
+$base-text: #222 !default;
+$base-text-meta: #222 !default;
+$base-text-placeholder: #484848 !default;
+$base-text-disabled: #484848 !default;
+
+$base-validation-success: #00853d !default;
+$base-validation-error: #970012 !default;
+$base-notification: #f00 !default;
+
+$base-decoration-primary: #222 !default;
+$base-decoration-secondary: #b3b3b3 !default;
+
+$base-brand-logo: #00f !default;
+
+// Links, buttons
+$base-primary-interactive: #0091ff !default;
+$base-primary-interactive-active: darken($base-primary-interactive, 30%) !default;
+$base-primary-interactive-hover: darken($base-primary-interactive, 20%) !default;
+$base-primary-interactive-visited: #551a8b !default;
+
+// Navigation
+$base-secondary-interactive: #222 !default;
+$base-secondary-interactive-active: darken($base-secondary-interactive, 30%) !default;
+$base-secondary-interactive-hover: darken($base-secondary-interactive, 20%) !default;
+
+// Input field borders
+$base-tertiary-interactive: #555 !default;
+$base-tertiary-interactive-active: #222 !default;
+$base-tertiary-interactive-hover: #333 !default;
+$base-tertiary-interactive-disabled: #949494 !default;
+
+$base-primary-reverse: #fff !default;
+$base-primary-reverse-interactive-active: darken($base-primary-reverse, 20%) !default;
+$base-primary-reverse-interactive-hover: darken($base-primary-reverse, 10%) !default;
+
+$base-interactive-disabled: #eee !default;
+
+$base-sale: #a50002 !default;
+$base-sale-active: darken($base-sale, 30%) !default;
+$base-sale-hover: darken($base-sale, 20%) !default;
+
+$base-z-axis-shadow: rgba(#222, 0.2) !default;
+
+$product-sustainability: #00853d !default;
+$product-new: #222 !default;
+$product-offer-product-marker: #a50002 !default;
+$product-membership: #eee !default;
+$product-scarcity: #f00 !default;
+
+/**
+ * 
+ * BASE COLOR SET
+ * For Storybook and exports
+ * Don't change unless new tokens are added in corrolation with the design system
+ *
+**/
+
+$base-colors: (
+  'background': (
+    'description': '',
+    'values': (
+      'base-background-default': $base-background-default,
+      'base-background-card': $base-background-card,
+      'base-background-overlay': $base-background-overlay,
+      'base-background-footer': $base-background-footer,
+      'base-background-row-hover': $base-background-row-hover,
+      'base-background-error': $base-background-error,
+      'base-background-success': $base-background-success,
+      'base-background-warning': $base-background-warning,
+      'base-background-info': $base-background-info,
+      'base-background-skeleton': $base-background-skeleton,
+    ),
+  ),
+  'text': (
+    'description':
+      'These tokens are to be used on non interactive states of text. Interactive state are covered in the section “Interactive” below.',
+    'values': (
+      'base-text': $base-text,
+      'base-text-meta': $base-text-meta,
+      'base-text-placeholder': $base-text-placeholder,
+      'base-text-disabled': $base-text-disabled,
+    ),
+  ),
+  'interactive': (
+    'description': 'Interactive color tokens are used for states off interactive elements.',
+    'values': (
+      'base-primary-interactive': $base-primary-interactive,
+      'base-primary-interactive-active': $base-primary-interactive-active,
+      'base-primary-interactive-hover': $base-primary-interactive-hover,
+      'base-primary-interactive-visited': $base-primary-interactive-visited,
+      'base-secondary-interactive': $base-secondary-interactive,
+      'base-secondary-interactive-active': $base-secondary-interactive-active,
+      'base-secondary-interactive-hover': $base-secondary-interactive-hover,
+      'base-tertiary-interactive': $base-tertiary-interactive,
+      'base-tertiary-interactive-active': $base-tertiary-interactive-active,
+      'base-tertiary-interactive-hover': $base-tertiary-interactive-hover,
+      'base-tertiary-interactive-disabled': $base-tertiary-interactive-disabled,
+      'base-primary-reverse': $base-primary-reverse,
+      'base-primary-reverse-interactive-active': $base-primary-reverse-interactive-active,
+      'base-primary-reverse-interactive-hover': $base-primary-reverse-interactive-hover,
+      'base-interactive-disabled': $base-interactive-disabled,
+    ),
+  ),
+  'communication': (
+    'description':
+      'Tokens to be used for visual keys related to input or notification for new events within a feature.',
+    'values': (
+      'base-validation-success': $base-validation-success,
+      'base-validation-error': $base-validation-error,
+      'base-notification': $base-notification,
+    ),
+  ),
+  'decoration': (
+    'description': 'These tokens are soly used for decoration purposes on UI elements.',
+    'values': (
+      'base-decoration-primary': $base-decoration-primary,
+      'base-decoration-secondary': $base-decoration-secondary,
+      'base-brand-logo': $base-brand-logo,
+    ),
+  ),
+  'contextual': (
+    'description':
+      'These tokens are soly used for decoration purposes on non interactive UI elements.',
+    'values': (
+      'base-sale': $base-sale,
+      'base-sale-active': $base-sale-active,
+      'base-sale-hover': $base-sale-hover,
+    ),
+  ),
+  'product-markers': (
+    'description': 'Only to be used for highlighting specific aspects of items.',
+    'values': (
+      'product-sustainability': $product-sustainability,
+      'product-new': $product-new,
+      'product-offer-product-marker': $product-offer-product-marker,
+      'product-scarcity': $product-scarcity,
+    ),
+  ),
+  'dimentional': (
+    'description': '',
+    'values': (
+      'base-z-axis-shadow': $base-z-axis-shadow,
+    ),
+  ),
+);
+
+$default-palette: (
+  'background': $base-background-default,
+  'text': $base-text,
+  'headline': $base-text,
+  'logo': $base-brand-logo,
+  'decoration': $base-decoration-secondary,
+  'interactive': $base-primary-interactive,
+  'interactive-hover': $base-primary-interactive-hover,
+  'interactive-active': $base-primary-interactive-active,
+  'interactive-reverse': $base-primary-reverse,
+);
+
+/**
+ * 
+ * LEGACY COLOR ASSIGNS
+ * DON'T USE THESE VARIABLES!!!
+ * 
+ * They are getting removed by restructuring from UI & Style team
+ *
+**/
+
+// "Applied" colors. Yet to be defined by Design System
+$sor-1: #f4dcd6 !default;
+$sand-2-color: #f4eddd !default;
+$ui-promo-marker-background-color: $sand-2-color !default;
+
+// Only used for vanilla PayPal modal secondary button. Should be replaced
+$light-grey: #e8e8e8 !default;
+
+// Can be removed when teasers is fully implemented as web-component
+$sor-3: #ff2f00 !default;
+
+// Action to be decided with DS team
+$ui-button-fallback-color: #707070 !default;
+
+// Mapping needed with following variables in order to be removed
+
+$black: #000 !default;
+// $base-text, $base-primary-interactive, $base-secondary-interactive, $base-z-axis-shadow
+
+$white: #fff !default;
+// $base-background-card, $base-primary-reverse
+
+$grey: #bcbcbc !default;
+// $base-text-placeholder, $base-text-disabled, $base-text-meta
+
+$stone-1-color: #e4e4e4 !default;
+// $base-decoration-secondary, $base-primary-reverse-interactive-active, $base-primary-reverse-interactive-hover, $base-background-footer, card alt background?
+
+$lighter-grey: #d0d0d0 !default;
+// $base-tertiary-interactive, $base-decoration-secondary, card alt background?
+
+$dark-grey: #707070 !default;
+// $base-text-meta, $base-text-placeholder, $base-text-disabled
+
+$component-primary-color: #f00 !default;
+// $base-sale, $base-notification, $base-validation-error, $product-scarcity, $base-secondary-interactive-active, $base-secondary-interactive-hover
+
+$component-secondary-color: #222 !default;
+// $base-decoration-primary, $base-text

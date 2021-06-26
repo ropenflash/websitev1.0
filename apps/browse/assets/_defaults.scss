@@ -1,0 +1,95 @@
+@import './variables';
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @include set_body_font_default;
+  background-color: $base-background-default;
+  color: $base-text;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+:global(#app),
+:global(#portal) {
+  box-sizing: border-box;
+
+  *::before,
+  *::after,
+  * {
+    box-sizing: inherit;
+  }
+}
+
+p + p {
+  margin-top: $spacing-xs;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td,
+  th {
+    text-align: left;
+    text-transform: none;
+  }
+}
+
+label {
+  display: inline;
+  font-size: inherit;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  vertical-align: baseline;
+}
+
+a {
+  color: inherit;
+}

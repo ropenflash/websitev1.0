@@ -1,0 +1,51 @@
+// Transitions
+$ui-animation-speed: 0.2s !default;
+$multiple-cta-animation-speed: 0.2s !default;
+$transition-duration: 300ms !default;
+
+// /*----------------------------------------
+//   LOADER ANIMATIONS
+// ----------------------------------------*/
+
+@mixin loaderShimmer {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    animation: shimmer 1.5s forwards infinite;
+    background-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.015) 30%,
+      transparent 60%,
+      transparent 100%
+    );
+    // background-image: linear-gradient(to right, red 0%, green 30%, red 60%, red 100%);
+    background-repeat: no-repeat;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(0) skew(-20deg);
+    width: 100%;
+    // animation: shimmer 200s forwards infinite;
+  }
+}
+
+@mixin loaderAnimation {
+  @keyframes :local(shimmer) {
+    0% {
+      transform: translateX(-80%) skew(-20deg);
+    }
+    100% {
+      transform: translateX(120%) skew(-20deg);
+    }
+  }
+}
+
+$transitions-set: (
+  '$ui-animation-speed': $ui-animation-speed,
+  '$multiple-cta-animation-speed': $multiple-cta-animation-speed,
+  '$transition-duration': $transition-duration,
+);

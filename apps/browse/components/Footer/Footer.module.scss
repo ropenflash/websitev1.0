@@ -1,0 +1,18 @@
+@import '../../assets/variables';
+
+.footer {
+  display: flex;
+  @include medium_breakpoint{
+    flex-direction: column;
+  }
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+}

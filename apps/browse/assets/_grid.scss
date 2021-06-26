@@ -1,0 +1,31 @@
+@use 'sass:math';
+//grid columns
+$grid-columns: 12;
+$grid-width: math.div(100%, $grid-columns);
+
+@function grid-column($size: 1, $gutter: 0) {
+  @if $gutter == 0 {
+    @return $grid-width * $size;
+  } @else {
+    @return calc(#{$grid-width * $size} - #{$gutter});
+  }
+}
+
+//containers
+$container-width-medium: 584px !default;
+$container-width-large: 676px !default;
+$container-width-xlarge: 1140px !default;
+$wrapper-width-desktop: 960px !default;
+$inner-content-width: 329px !default;
+$editorial-content-max-width: 1030px !default;
+$editorial-media-max-width: 910px !default;
+
+$container-width-set: (
+  '$container-width-medium': $container-width-medium,
+  '$container-width-large': $container-width-large,
+  '$container-width-xlarge': $container-width-xlarge,
+  '$wrapper-width-desktop': $wrapper-width-desktop,
+  '$inner-content-width': $inner-content-width,
+  '$editorial-content-max-width': $editorial-content-max-width,
+  '$editorial-media-max-width': $editorial-media-max-width,
+);

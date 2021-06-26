@@ -1,0 +1,23 @@
+// z-index
+$header-z-index: 1003; 
+$overlay-z-index: 1010;
+$focus-trap-overlay-z-index: $overlay-z-index - 2;
+$sizepicker-z-index: $focus-trap-overlay-z-index + 1;
+$sidebar-z-index: 1020;
+$modal-overlay-z-index: $sidebar-z-index + 1;
+$notification-z-index: 1030;
+$component-base-z-index: 1;
+$component-text-z-index: $component-base-z-index + 1;
+$component-overlay-z-index: $component-text-z-index + 1;
+
+$zindex-set: (
+  '$header-z-index': $header-z-index,
+  '$overlay-z-index': $overlay-z-index,
+  '$focus-trap-overlay-z-index': $focus-trap-overlay-z-index,
+  '$sizepicker-z-index': $sizepicker-z-index,
+  '$sidebar-z-index': $sidebar-z-index,
+  '$notification-z-index': $notification-z-index,
+  '$component-base-z-index': $component-base-z-index,
+  '$component-text-z-index': $component-text-z-index,
+  '$component-overlay-z-index': $component-overlay-z-index,
+);

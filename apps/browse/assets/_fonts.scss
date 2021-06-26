@@ -1,0 +1,83 @@
+// Default fallback fonts
+$default-font-serif: 'Garamond', 'Times New Roman', Times, serif !default;
+$default-font-m4: '华文细黑', STXihei, '宋体', SimSun !default;
+$default-font-m17: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo,
+  'ＭＳ Ｐゴシック', 'MS PGothic' !default;
+
+$font-sans-regular: 'HM Sans Regular', $default-font-m17, sans-serif !default;
+$font-sans-light: 'HM Sans Light', $default-font-m17, sans-serif !default;
+$font-sans-semi-bold: 'HM Sans Semi Bold', $default-font-m17, sans-serif !default;
+$font-sans-bold: 'HM Sans Bold', $default-font-m17, sans-serif !default;
+
+$font-serif-regular: 'HM Serif Regular', $default-font-m17, $default-font-serif !default;
+$font-serif-semi-bold: 'HM Serif Semi Bold', $default-font-m17, $default-font-serif !default;
+$font-serif-semibold: 'HM Serif Semi Bold', $default-font-m17, $default-font-serif !default;
+$font-serif-italic: 'HM Serif Italic', $default-font-m17, $default-font-serif !default;
+
+$font-sans-light: 'HM Sans Light', $default-font-m17, sans-serif !default;
+$font-sans-regular: 'HM Sans Regular', $default-font-m17, sans-serif !default;
+$font-sans-semibold: 'HM Sans Semi Bold', $default-font-m17, sans-serif !default;
+$font-sans-bold: 'HM Sans Bold', $default-font-m17, sans-serif !default;
+
+// Country/Market Spacific
+// These are class names to be used in the html tag
+$china-english: 'en-cn' !default;
+$china-chinese: 'zh-cn' !default;
+
+// Currently only cointaining a star on character \002A
+$iconfont: 'HM Font Icons' !default;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-normal: 1.3rem;
+$font-size-small: 1.1rem;
+$font-size-large: 1.6rem;
+
+$heading-big: 4rem;
+$heading-big-s: 2.8rem;
+
+$heading-large: 2.8rem;
+$heading-large-s: 2.4rem;
+
+$heading-medium: 2rem;
+$heading-small: 1.6rem;
+$heading-meta: $font-size-normal;
+
+$heading-large-notice: 5.2rem;
+
+/** VANILLA SPECIFIC (NEEDS TO BE REMOVED) **/
+
+$font-sansserif: 'HM Sans', $default-font-m17, sans-serif;
+
+//Font sizes
+$small: 11px;
+$large: 13px;
+$medium-large: 14px;
+
+$heading-larger: 28px;
+
+/** VANILLA SPECIFIC END **/
+
+@mixin hide-text {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+@mixin hidden-text {
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
