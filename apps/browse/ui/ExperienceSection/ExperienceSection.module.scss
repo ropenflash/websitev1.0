@@ -1,3 +1,5 @@
+@import '../../assets/variables';
+
 .experienceSection {
   height: 100vh;
   width: 100%;
@@ -13,18 +15,24 @@
   width: 100%;
 }
 
+.cards {
+  display: flex;
+  margin-top: $spacing-l;
+  margin-left: $spacing-m;
+  position: relative;
+}
+
 .cardPart {
   background-color: #53ABD1;
   height: 100%;
   width: 100%;
-  clip-path: polygon(81% 0, 0 0, 0 100%, 100% 100%);
 }
 
 .textPart {
   background-color: #FFBABA;
+  margin-left: $spacing-l;
   height: 100%;
   width: 100%;
-  clip-path: polygon(100% 0, 26% 0, 59% 100%, 100% 100%);
 }
 
 .subscribeSection {

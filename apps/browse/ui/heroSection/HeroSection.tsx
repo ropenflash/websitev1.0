@@ -9,7 +9,7 @@ export default function HeroSection() {
         loop
         muted
         className={styles.video}>
-        <source src="intro1.mp4" type="video/mp4" />
+        <source src="desktopIntro.mp4" type="video/mp4" />
       </video>
     </div>
   )
